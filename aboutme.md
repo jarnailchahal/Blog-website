@@ -7,7 +7,7 @@ image: /assets/img/mif.jpeg
 
 ----------
 
-###### Hello, I'm currently working as a Technical Specialist (remotely) in Ottawa, ON and a Computer Science Student at Carleton University.
+##### Hello, I'm currently working as a Technical Specialist (remotely) in Ottawa, ON and a Computer Science Student at Carleton University.
 
 <br>
 
