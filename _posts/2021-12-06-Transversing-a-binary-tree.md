@@ -16,7 +16,6 @@ An easy way to do that might be recursion.
 
 
 ```python
-
 1 class TreeNode:
 2     def __init__(self, val):
 3         self.val = val
@@ -51,7 +50,6 @@ An easy way to do that might be recursion.
 32 root.left.right = TreeNode(5)
 33
 34 print(inorderTraversal(root))
-
 ```
 
 The above code visits each node of the tree and appends the current node to a list called *answer*. Taking a deeper look, we can see how it does that, we will look only at the **interesting** lines of this code:
