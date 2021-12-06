@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Tranversing a Binary tree
+title: Binary tree transversal
 subtitle: How to transverse a binary tree using recursion?
-cover-img: /assets/img/GBgraph.jpg
+cover-img: /assets/img/tree.jpeg
 tags: [Data Analysis]
 ---
 
@@ -83,22 +83,19 @@ As expected, it does **NOT** print **1).. before left:** the **4th** time.
 
 Now, finally, it goes into the next line i.e. line 20 and prints **2).. after left:** and appends the **current node (that is 4)** to the empty answer list at line 21.
 
+The answer list is now **[4]**
 
+Next, it goes to line 23 and prints  **"3).. before right:"**
 
+After, at line 24, we call function *inorderTraversalUtil* again but this time the argument is **root.left**. Note that currently value of node is **[4]** and **4.left** does not exist. so, it returns empty at line 16.
 
+After no return from line 23, it now goes to line 24 and prints **3).. after right:**  and prints **"---------------"** due to line 25.
 
+Looking at the terminal output, as expected, we can see the following output during the first complete iteration:
+<div style="text-align:center"><img src="../assets/img/o.png" width="400"></div>
 
+Remember that the above was for only the first complete iteration (That is when root value was 4). Now, because of recursion, it will complete the second iteration with root value 2 and then again with value 1.
+Every time it completes an iteration, it will add that current element to the 'answer' list and at the end, answer list will be  **[4,2,5,1,3]**  
 
-After organizing and modifying parts of the above graph, we should get something similar to the below example. The below graph uses the same data as the one above.
-
-![GoodGraph](https://raw.githubusercontent.com/jarnailchahal/home/master/_site/assets/img/goodgraph.png)*Good Graph*
-
-Here, it is much more clearer that we want the reader(s) to approve hiring of 2 new help-desk analysts [Title] as the gap between Received & Processed tickets is gradually increasing since May [Added Annotation].
-
-#### In conclusion, a good graph should:
-
-*	TELL A VISUAL STORY
-*	BE EASY TO UNDERSTAND
-* BE TAILORED TO YOUR TARGET AUDIENCE
-* BE USER-FRIENDLY
-* BE HONEST
+Full terminal output below:
+<div style="text-align:center"><img src="../assets/img/of.png" width="400"></div>
