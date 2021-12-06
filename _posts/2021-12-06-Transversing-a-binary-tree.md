@@ -10,9 +10,9 @@ tags: [Data Analysis]
 
 Consider the following Binary Tree as an example:
 ![](image.png)
-![default](assets/img/d.png) *Default*
+![default](../assets/img/d.png) *Default*
 
-As we can see, the provided tree only have 5 nodes. How can we transverse i.e. visit each node of the given tree?
+As we can see, the provided tree only have 5 nodes [1,2,3,4,5]. How can we transverse i.e. visit each node of the given tree?
 
 An easy way to do that might be recursion.
 
