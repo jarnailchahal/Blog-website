@@ -10,15 +10,9 @@ tags: [Data Analysis]
 
 Consider the following Binary Tree as an example:
 
-<style type="text/css">
-.centerImage
-{
- text-align:center;
- display:block;
-}
-</style>
 
-<img src="../assets/img/d.png" width="400" class="centerImage">
+<div style="text-align:center"><img src="../assets/img/d.png" width="400"></div>
+
 
 As we can see, the provided tree only have 5 nodes [1,2,3,4,5]. How can we transverse i.e. visit each node of the given tree?
 
@@ -73,9 +67,14 @@ Root value is still **1**
 
 <img src="../assets/img/1.png" width="400" class="centerImage">
 
-Goes through lines 13 to 19 (prints: *1).. before left:* once because of line 18)
+Goes through lines 13 to 19 prints: **1).. before left:** once because of line 18
 
-At line
+At line 19: because of recursion it passes  **root.left** (i.e. value 2) and then again goes from line 13 to 19 printing: **1).. before left:** again because of line 18.
+
+<img src="../assets/img/1.png" width="400" class="centerImage">
+
+
+At line 19: because of recursion it now passes  **root.left.left** (i.e. value 4) and then again goes from line 13 to 19 (printing: *1).. before left:* the third time again because of line 18).
 
 
 
