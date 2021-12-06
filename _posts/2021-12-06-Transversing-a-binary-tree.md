@@ -9,8 +9,9 @@ tags: [Data Analysis]
 ### Lets say we want to convince upper management of an example company to hire new Helpdesk employee(s).
 
 Consider the following Binary Tree as an example:
-![](image.png)
-![default](../assets/img/d.png) *Default*
+
+<img src="../assets/img/d.png" width="200">
+
 
 As we can see, the provided tree only have 5 nodes [1,2,3,4,5]. How can we transverse i.e. visit each node of the given tree?
 
