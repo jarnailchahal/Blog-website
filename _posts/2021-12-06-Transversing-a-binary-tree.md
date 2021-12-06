@@ -10,7 +10,7 @@ tags: [Data Analysis]
 
 Consider the following Binary Tree as an example:
 
-![default](./assets/img/d.png) *Default*
+![default]('assets/img/d.png') *Default*
 
 As we can see, the provided tree only have 5 nodes. How can we transverse i.e. visit each node of the given tree?
 
@@ -56,12 +56,11 @@ An easy way to do that might be recursion.
 
 ```
 
-The above code visits each node of the tree and appends the current node to an answer list.
+The above code visits each node of the tree and appends the current node to an answer list. Taking a deeper look, we can see how it does that, We will look at the *interesing* lines of code only:
 
-Taking a deeper look, we can see how it does that:
-
-It starts with
-
+It starts with line 34 calling inorderTraversal function.
+Inside inorderTraversal it creates an empty list called 'answer' at line 8 and then goes into inorderTraversalUtil at line 10.
+What happens at this point?
 
 
 After organizing and modifying parts of the above graph, we should get something similar to the below example. The below graph uses the same data as the one above.
