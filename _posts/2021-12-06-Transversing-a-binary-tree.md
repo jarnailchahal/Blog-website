@@ -1,12 +1,10 @@
 ---
 layout: post
 title: Binary tree transversal
-subtitle: How to transverse a binary tree using recursion?
+subtitle: How can we transverse a binary tree using recursion?
 cover-img: /assets/img/tree.jpeg
-tags: [Data Analysis]
+tags: [Binary Tree]
 ---
-
-### Lets say we want to convince upper management of an example company to hire new Helpdesk employee(s).
 
 Consider the following Binary Tree as an example:
 
@@ -58,7 +56,7 @@ An easy way to do that might be recursion.
 
 The above code visits each node of the tree and appends the current node to a list called *answer*. Taking a deeper look, we can see how it does that, we will look only at the **interesting** lines of this code:
 
-All starts with line 34 calling *inorderTraversal* function with root as its argument. Please note that root value is **1** here.
+It all starts with line 34 calling *inorderTraversal* function with root as its argument. Please note that root value is **1** here.
 Inside *inorderTraversal*, it creates an empty list called 'answer' at line 8 and then goes into *inorderTraversalUtil* at line 10.
 
 Root value is still **1**
@@ -67,17 +65,17 @@ Root value is still **1**
 
 Goes through lines 13 to 19 prints: **1).. before left:** once because of line 18
 
-At line 19: because of recursion it now passes  **root.left** (i.e. value 2) as an argument to *inorderTraversalUtil* and then again goes from line 13 to 19 printing: **1).. before left:** again because of line 18.
+At line 19: because of recursion it now passes **root.left** (i.e. 1.left which is value 2) as an argument to *inorderTraversalUtil* and then again goes from line 13 to 19 printing: **1).. before left:** again because of line 18.
 
 Root value is now **2**
 <div style="text-align:center"><img src="../assets/img/2.png" width="400"></div>
 
-At line 19: because of recursion it now passes  **root.left.left** (i.e. value 4) and then again goes from line 13 to 19 printing: **1).. before left:** the third time because of line 18.
+At line 19: because of recursion it now passes  **root.left.left** (i.e. 2.left which is value 4) and then again goes from line 13 to 19 printing: **1).. before left:** the third time because of line 18.
 
 Root value is now **4**
 <div style="text-align:center"><img src="../assets/img/4.png" width="400"></div>
 
-At line 19: because of recursion it now passes  **root.left.left.left** (i.e. value NULL). It finally sees that our tree does not have any **4.left** value, so it goes from line 13 to 16 and returns nothing.
+At line 19: because of recursion it now passes  **root.left.left.left** (i.e. as we dont have any 4.value, it passes NULL). It now sees that our tree does not have any **4.left** value, so this time it only goes from line 13 to 16 and returns nothing.
 
 As expected, it does **NOT** print **1).. before left:** the **4th** time.
 
@@ -87,9 +85,9 @@ The answer list is now **[4]**
 
 Next, it goes to line 23 and prints  **"3).. before right:"**
 
-After, at line 24, we call function *inorderTraversalUtil* again but this time the argument is **root.left**. Note that currently value of node is **[4]** and **4.left** does not exist. so, it returns empty at line 16.
+After, at line 24, we call function *inorderTraversalUtil* again but this time the argument is **root.left**. Note that current value of node is **[4]** and **4.left** does not exist so, it returns empty at line 16.
 
-After no return from line 23, it now goes to line 24 and prints **3).. after right:**  and prints **"---------------"** due to line 25.
+After no return from line 23, it now goes to line 24 and prints **3).. after right:**  and then prints **"---------------"** due to line 25.
 
 Looking at the terminal output, as expected, we can see the following output during the first complete iteration:
 <div style="text-align:center"><img src="../assets/img/o.png" width="400"></div>
