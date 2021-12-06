@@ -10,7 +10,7 @@ Consider the following Binary Tree as an example:
 
 <div style="text-align:center"><img src="../assets/img/d.png" width="400"></div>
 
-As we can see, the provided tree only have 5 nodes **[1,2,3,4,5]**. How can we transverse i.e. visit each node of the given tree?
+As we can see, the provided tree only have 5 nodes **[1,2,3,4,5]**. How can we transverse i.e. visit each node of the given tree in the following order (left, root, right)?
 
 An easy way to do that might be recursion.
 
