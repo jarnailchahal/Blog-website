@@ -19,40 +19,40 @@ An easy way to do that might be recursion.
 
 ```python
 
-1.class TreeNode:
-2.    def __init__(self, val):
-3.        self.val = val
-4.      self.left = None
-5.      self.right = None
-
-def inorderTraversal(root):
-    answer = []
-
-    inorderTraversalUtil(root, answer)
-    return answer
-
-def inorderTraversalUtil(root, answer):
-
-    if root is None:
-        return
-    else:
-        print("1).. before left:",answer)
-        inorderTraversalUtil(root.left, answer)
-        print("2).. after left:",answer)
-        answer.append(root.val)
-        print("3).. before right:",answer)
-        inorderTraversalUtil(root.right, answer)
-        print("4).. after right:",answer)
-        print("---------------")
-        return
-
-root = TreeNode(1)
-root.left = TreeNode(2)
-root.right = TreeNode(3)
-root.left.left = TreeNode(4)
-root.left.right = TreeNode(5)
-
-print(inorderTraversal(root))
+1 class TreeNode:
+2     def __init__(self, val):
+3         self.val = val
+4       self.left = None
+5       self.right = None
+6
+7  def inorderTraversal(root):
+8     answer = []
+9
+10    inorderTraversalUtil(root, answer)
+11    return answer
+12
+13 def inorderTraversalUtil(root, answer):
+14
+15    if root is None:
+16        return
+17    else:
+18        print("1).. before left:",answer)
+19        inorderTraversalUtil(root.left, answer)
+20        print("2).. after left:",answer)
+21        answer.append(root.val)
+22        print("3).. before right:",answer)
+23        inorderTraversalUtil(root.right, answer)
+24        print("4).. after right:",answer)
+25        print("---------------")
+26        return
+27
+28 root = TreeNode(1)
+29 root.left = TreeNode(2)
+30 root.right = TreeNode(3)
+31 root.left.left = TreeNode(4)
+32 root.left.right = TreeNode(5)
+33
+34 print(inorderTraversal(root))
 
 ```
 
