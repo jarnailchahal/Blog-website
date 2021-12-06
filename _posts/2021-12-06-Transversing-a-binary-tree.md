@@ -10,8 +10,15 @@ tags: [Data Analysis]
 
 Consider the following Binary Tree as an example:
 
-<img src="../assets/img/d.png" width="200">
+<style type="text/css">
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
+</style>
 
+<img src="../assets/img/d.png" width="400" class="centerImage">
 
 As we can see, the provided tree only have 5 nodes [1,2,3,4,5]. How can we transverse i.e. visit each node of the given tree?
 
@@ -57,19 +64,18 @@ An easy way to do that might be recursion.
 
 ```
 
-The above code visits each node of the tree and appends the current node to an answer list. Taking a deeper look, we can see how it does that, we will look at the **interesing** lines of code only:
+The above code visits each node of the tree and appends the current node to a list called *answer*. Taking a deeper look, we can see how it does that, we will look only at the **interesing** lines of this code:
 
 It starts with line 34 calling inorderTraversal function with root as its argument. Please note that root value is **1** here.
-Inside inorderTraversal it creates an empty list called 'answer' at line 8 and then goes into inorderTraversalUtil at line 10.
+Inside inorderTraversal, it creates an empty list called 'answer' at line 8 and then goes into inorderTraversalUtil at line 10.
 
-What happens at this point? Root value is still **1**
+Root value is still **1**
 
-
+<img src="../assets/img/1.png" width="400" class="centerImage">
 
 Goes through lines 13 to 19 (prints: *1).. before left:* once because of line 18)
 
-
-
+At line
 
 
 
