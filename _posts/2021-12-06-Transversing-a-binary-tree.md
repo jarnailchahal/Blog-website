@@ -9,8 +9,8 @@ tags: [Data Analysis]
 ### Lets say we want to convince upper management of an example company to hire new Helpdesk employee(s).
 
 Consider the following Binary Tree as an example:
-
-![default]('assets/img/d.png') *Default*
+![](image.png)
+![default](assets/img/d.png) *Default*
 
 As we can see, the provided tree only have 5 nodes. How can we transverse i.e. visit each node of the given tree?
 
@@ -56,11 +56,24 @@ An easy way to do that might be recursion.
 
 ```
 
-The above code visits each node of the tree and appends the current node to an answer list. Taking a deeper look, we can see how it does that, We will look at the *interesing* lines of code only:
+The above code visits each node of the tree and appends the current node to an answer list. Taking a deeper look, we can see how it does that, we will look at the **interesing** lines of code only:
 
-It starts with line 34 calling inorderTraversal function.
+It starts with line 34 calling inorderTraversal function with root as its argument. Please note that root value is **1** here.
 Inside inorderTraversal it creates an empty list called 'answer' at line 8 and then goes into inorderTraversalUtil at line 10.
-What happens at this point?
+
+What happens at this point? Root value is still **1**
+
+
+
+Goes through lines 13 to 19 (prints: *1).. before left:* once because of line 18)
+
+
+
+
+
+
+
+
 
 
 After organizing and modifying parts of the above graph, we should get something similar to the below example. The below graph uses the same data as the one above.
