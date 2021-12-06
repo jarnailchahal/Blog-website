@@ -17,13 +17,13 @@ As we can see, the provided tree only have 5 nodes. How can we transverse i.e. v
 An easy way to do that might be recursion.
 
 
-```python "class:lineNo"
+```python
 
-class TreeNode:
-    def __init__(self, val):
-        self.val = val
-        self.left = None
-        self.right = None
+1.class TreeNode:
+2.    def __init__(self, val):
+3.        self.val = val
+4.      self.left = None
+5.      self.right = None
 
 def inorderTraversal(root):
     answer = []
