@@ -57,7 +57,7 @@ The above code visits each node of the tree and appends the current node to a li
 It all starts with line 34 calling *inorderTraversal* function with root as its argument. Please note that root value is **1** here.
 Inside *inorderTraversal*, it creates an empty list called 'answer' at line 8 and then goes into *inorderTraversalUtil* at line 10.
 
-Root value is still **1**
+Root value is **1**
 
 <div style="text-align:center"><img src="../assets/img/1.png" width="400"></div>
 
@@ -65,10 +65,10 @@ Goes through lines 13 to 19 prints: **1).. before left:** once because of line 1
 
 At line 19: because of recursion it now passes **root.left** (i.e. 1.left which is value 2) as an argument to *inorderTraversalUtil* and then again goes from line 13 to 19 printing: **1).. before left:** again because of line 18.
 
-Root value is now **2**
+Root value is **2**
 <div style="text-align:center"><img src="../assets/img/2.png" width="400"></div>
 
-At line 19: because of recursion it now passes  **root.left.left** (i.e. 2.left which is value 4) and then again goes from line 13 to 19 printing: **1).. before left:** the third time because of line 18.
+At line 19: because of recursion it now passes **root.left.left** (i.e. 2.left which is value 4) and then again goes from line 13 to 19 printing: **1).. before left:** the third time because of line 18.
 
 Root value is now **4**
 <div style="text-align:center"><img src="../assets/img/4.png" width="400"></div>
