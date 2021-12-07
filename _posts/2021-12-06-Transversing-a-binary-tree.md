@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Binary tree transversal
-subtitle: How can we transverse a binary tree using recursion?
+title: Binary tree traversal
+subtitle: How can we traverse a binary tree using recursion?
 cover-img: /assets/img/tree.jpeg
 tags: [Binary Tree]
 ---
